@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Detector</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<h2>Online Detector Application</h2>
+	<div class="tooltip">
+		<span class="status">You're currently Online</span>
+	</div>
+
+
+<script>
+setInterval(function onlineDectector(){
+	const status = window.navigator.onLine;
+	console.log(status);
+	if (!status) {
+		document.querySelector(".status").innerHTML = " You're currently Offline!";
+		document.querySelector(".status").style.color = "red"
+	}else{
+		document.querySelector(".status").innerHTML = " You are Online now";
+		document.querySelector(".status").style.color = "#bfbfbf"
+	}
+
+},1)
+
+</script>
+</body>
+</html>
+
+
