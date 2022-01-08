@@ -6,14 +6,14 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-	<h2>Online Detector Application</h2>
+	<h2>Online Detectore Application</h2>
 	<div class="tooltip">
 		<span class="status">You're currently Online</span>
 	</div>
 
 
 <script>
-setInterval(function onlineDectector(){
+setInterval(function onlineDectectore(){
 	const tooltip = document.querySelector(".tooltip");
 	const status = document.querySelector(".status");
 	const isOnline = window.navigator.onLine;
@@ -22,11 +22,11 @@ setInterval(function onlineDectector(){
 		status.style.color = "red";
 
 	}else{
-		status.innerHTML = " You are currently Online";
+		status.innerHTML = "You're currently Online";
 		status.style.color = "#bfbfbf";
 	}
 
-},1)
+},1000)
 
 </script>
 </body>
