@@ -14,14 +14,16 @@
 
 <script>
 setInterval(function onlineDectector(){
-	const status = window.navigator.onLine;
-	console.log(status);
-	if (!status) {
-		document.querySelector(".status").innerHTML = " You're currently Offline!";
-		document.querySelector(".status").style.color = "red"
+	const tooltip = document.querySelector(".tooltip");
+	const status = document.querySelector(".status");
+	const isOnline = window.navigator.onLine;
+	if (!isOnline) {
+		status.innerHTML = " You're currently Offline!";
+		status.style.color = "red";
+
 	}else{
-		document.querySelector(".status").innerHTML = " You are Online now";
-		document.querySelector(".status").style.color = "#bfbfbf"
+		status.innerHTML = " You are currently Online";
+		status.style.color = "#bfbfbf";
 	}
 
 },1)

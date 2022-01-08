@@ -12,22 +12,21 @@ body{
 h2{
 	font-size: 30px;
 	text-align: center;
-	padding:20px 0 10px;
+	padding:150px 0 10px;
 }
 .tooltip {
 	position: absolute;
 	left:50%;
 	top: 40%;
 	transform: translate(-50%, -50%);
-    width: 300px;
     margin: auto;
     background: #502626;
     border-radius: 5px;
     text-align: center;
-    padding: 15px 5px;
+    padding: 13px 20px;
 }
 .tooltip span{
 	color: #bfbfbf;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 25px;
 }
